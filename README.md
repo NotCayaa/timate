@@ -85,5 +85,4 @@ timate/
 
 ---
 
-Created by **Jengset Dev Team**.
 **2024 Jengset Dev Group. All rights reserved.**
