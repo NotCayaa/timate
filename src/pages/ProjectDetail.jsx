@@ -128,7 +128,7 @@ const ProjectDetail = () => {
                                     rel="noreferrer"
                                     className="inline-flex items-center gap-2 bg-gray-900 dark:bg-gray-700 text-white px-6 py-3 rounded-xl hover:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300 font-bold hover:shadow-lg transform hover:-translate-y-1"
                                 >
-                                    <img src="/assets/icon-pack/icons8-github-50.png" alt="Github" className="w-6 h-6 invert" />
+                                    <img src={`${import.meta.env.BASE_URL}assets/icon-pack/icons8-github-50.png`} alt="Github" className="w-6 h-6 invert" />
                                     View Repository
                                 </a>
                             </div>
