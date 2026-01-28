@@ -31,11 +31,11 @@ export const projects = [
         description: "Onyx is a modern, sleek, and powerful desktop music player built with Svelte 5, Electron, and Node.js. " +
             "It combines the best of both worlds: Spotify's metadata & recommendation engine with YouTube's vast audio library.",
         images: [
-            "/assets/foto-project/ryan/logo-onyx.png",
-            "/assets/foto-project/ryan/Onyx-0.png",
-            "/assets/foto-project/ryan/Onyx-1.png",
-            "/assets/foto-project/ryan/Onyx-2.png",
-            "/assets/foto-project/ryan/Onyx-3.png"
+            import.meta.env.BASE_URL + "assets/foto-project/ryan/logo-onyx.png",
+            import.meta.env.BASE_URL + "assets/foto-project/ryan/Onyx-0.png",
+            import.meta.env.BASE_URL + "assets/foto-project/ryan/Onyx-1.png",
+            import.meta.env.BASE_URL + "assets/foto-project/ryan/Onyx-2.png",
+            import.meta.env.BASE_URL + "assets/foto-project/ryan/Onyx-3.png"
         ],
         technologies: ["Svelte", "Electron", "Node.js", "Express JS", "Vite", "Spotify Lib & API"],
         githubUrl: "https://github.com/NotCayaa/onyx-player",

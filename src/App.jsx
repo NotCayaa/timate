@@ -9,7 +9,7 @@ import MemberProfile from './pages/MemberProfile';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen relative overflow-x-hidden bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
         <Navbar />
 

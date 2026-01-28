@@ -36,7 +36,7 @@ const Navbar = () => {
                 <div className="relative transition-all duration-300">
                     <Link to="/">
                         <img
-                            src={theme === 'dark' ? "/assets/logo/logo-dark.png" : "/assets/logo/logo-nobg.png"}
+                            src={theme === 'dark' ? `${import.meta.env.BASE_URL}assets/logo/logo-dark.png` : `${import.meta.env.BASE_URL}assets/logo/logo-nobg.png`}
                             alt="logo"
                             className="w-24 md:w-32 lg:w-40 object-contain rounded-full transition-all duration-300"
                         />

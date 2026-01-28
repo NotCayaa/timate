@@ -2,7 +2,7 @@ export const teamMembers = [
     {
         id: "yudha",
         name: "Hendrian Yudha Pratama",
-        image: "/assets/foto-profile/Yudha.jpg",
+        image: import.meta.env.BASE_URL + "assets/foto-profile/Yudha.jpg",
         role: "Developer",
         bio: "Passionate developer with a strong focus on creating intuitive and scalable web applications. " +
             "Always eager to learn new technologies and improve coding skills.",
@@ -13,7 +13,7 @@ export const teamMembers = [
     {
         id: "arief",
         name: "Mohammad Arief Gunadi",
-        image: "/assets/foto-profile/Picsart_23-09-07_20-39-51-380.jpg",
+        image: import.meta.env.BASE_URL + "assets/foto-profile/Picsart_23-09-07_20-39-51-380.jpg",
         role: "Developer",
         bio: "Full-stack developer who enjoys solving complex problems. " +
             "Experienced in building modern web apps and loves experimenting with new tech stacks.",
@@ -24,7 +24,7 @@ export const teamMembers = [
     {
         id: "jeandry",
         name: "Jeandry Fitoy",
-        image: "/assets/foto-profile/arif.jpg",
+        image: import.meta.env.BASE_URL + "assets/foto-profile/arif.jpg",
         role: "Developer",
         bio: "Dedicated software engineer committed to writing clean and efficient code. " +
             "A team player who thrives in collaborative environments.",
@@ -35,7 +35,7 @@ export const teamMembers = [
     {
         id: "farras",
         name: "Az Zikra Farras Arsyaputra",
-        image: "/assets/foto-profile/arif.jpg",
+        image: import.meta.env.BASE_URL + "assets/foto-profile/arif.jpg",
         role: "Developer",
         bio: "Creative developer with a knack for UI/UX design. " +
             "Believes that great software should not only work well but also look good.",
@@ -46,7 +46,7 @@ export const teamMembers = [
     {
         id: "ryan",
         name: "Heryana Romansyah (Ryan/caya8205)",
-        image: "/assets/foto-profile/Ryan.webp",
+        image: import.meta.env.BASE_URL + "assets/foto-profile/Ryan.webp",
         role: "Backend Dev & AI Engineer",
         bio: "Specializing in Backend Systems and AI solutions. " +
             "Currently exploring LLMs (Fine-tuning, Chatbot, Merging models with LoRA, etc.) " +
@@ -58,7 +58,7 @@ export const teamMembers = [
     {
         id: "davin",
         name: "Davin Vergian Rizal Pratama",
-        image: "/assets/foto-profile/foto bule.jpg",
+        image: import.meta.env.BASE_URL + "assets/foto-profile/foto bule.jpg",
         role: "Developer",
         bio: "Enthusiastic developer focused on delivering high-quality software. " +
             "Enjoys tackling challenges and turning ideas into reality.",
