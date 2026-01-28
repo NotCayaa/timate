@@ -39,7 +39,7 @@ Built with modern web technologies to ensure speed, accessibility, and a premium
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/your-username/timate.git
+    git clone https://github.com/NotCayaa/timate.git
     cd timate
     ```
 
