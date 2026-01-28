@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { projects } from '../data/projects';
 import { teamMembers } from '../data/team';
+import SEO from '../components/SEO';
 
 const ProjectDetail = () => {
     const { id } = useParams();
@@ -24,6 +25,7 @@ const ProjectDetail = () => {
     if (!project) {
         return (
             <div className="min-h-screen flex items-center justify-center pt-20 bg-gray-50 dark:bg-gray-900">
+                <SEO title="Project Not Found" />
                 <div className="text-center">
                     <h1 className="text-4xl font-bold mb-4 dark:text-white">Project Not Found</h1>
                     <Link to="/project" className="text-yellow-600 hover:underline">Return to Projects</Link>
@@ -46,6 +48,10 @@ const ProjectDetail = () => {
 
     return (
         <div className="pt-40 pb-20 px-4 md:px-0 bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300">
+            <SEO
+                title={project.title}
+                description={project.description.substring(0, 150) + "..."}
+            />
             <div className="container mx-auto max-w-5xl">
                 {/* Hero / Header with Carousel */}
                 <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden mb-12 border border-gray-100 dark:border-gray-700 relative group">

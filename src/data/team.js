@@ -7,7 +7,7 @@ export const teamMembers = [
         bio: "Passionate developer with a strong focus on creating intuitive and scalable web applications. " +
             "Always eager to learn new technologies and improve coding skills.",
         github: "#",
-        instagram: "https://www.instagram.com/gua_yudha/",
+        instagram: "https://www.instagram.com/hendrian_yudhaa__/",
         personal: "#"
     },
     {
@@ -18,7 +18,7 @@ export const teamMembers = [
         bio: "Full-stack developer who enjoys solving complex problems. " +
             "Experienced in building modern web apps and loves experimenting with new tech stacks.",
         github: "#",
-        instagram: "https://www.instagram.com/mhmd.ariefgunadi/",
+        instagram: "https://www.instagram.com/riefgnadi_/",
         personal: "#"
     },
     {

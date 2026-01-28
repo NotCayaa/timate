@@ -1,6 +1,12 @@
+import SEO from '../components/SEO';
+
 const VisionMission = () => {
     return (
         <div className="pt-40 pb-20 px-4 md:px-20 container mx-auto min-h-screen">
+            <SEO
+                title="Vision & Mission"
+                description="Our vision is to become a leading community of aspiring IT professionals."
+            />
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-10 md:p-16 border-l-8 border-yellow-400">
                 <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center dark:text-white">Vision & Mission</h1>
 

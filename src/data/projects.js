@@ -10,7 +10,8 @@ export const projects = [
         ],
         technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
         githubUrl: "https://github.com/example/ecommerce",
-        authorId: "yudha"
+        authorId: "yudha",
+        category: "Web App"
     },
     {
         id: 2,
@@ -23,7 +24,8 @@ export const projects = [
         ],
         technologies: ["Vue.js", "Firebase", "Vuex"],
         githubUrl: "https://github.com/example/task-manager",
-        authorId: "arief"
+        authorId: "arief",
+        category: "Web App"
     },
     {
         id: 3,
@@ -39,6 +41,7 @@ export const projects = [
         ],
         technologies: ["Svelte", "Electron", "Node.js", "Express JS", "Vite", "Spotify Lib & API"],
         githubUrl: "https://github.com/NotCayaa/onyx-player",
-        authorId: "ryan"
+        authorId: "ryan",
+        category: "Desktop App"
     }
 ];

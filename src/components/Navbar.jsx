@@ -44,7 +44,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Controls (Toggle + Menu Button) */}
-                <div className="md:hidden mt-2 flex items-center gap-4">
+                <div className="md:hidden mt-2 flex items-center gap-4 pr-2">
                     {/* Mobile Theme Toggle */}
                     <ThemeToggle
                         theme={theme}
@@ -63,7 +63,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Links */}
-                <ul className={`${isOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row absolute md:static top-20 left-0 w-full md:w-auto bg-white md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent shadow-lg md:shadow-none p-6 md:p-0 gap-6 md:gap-12 items-center justify-center transition-all duration-300 z-50`}>
+                <ul className={`${isOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row absolute md:static top-20 left-0 w-full md:w-auto bg-white md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent shadow-lg md:shadow-none p-6 md:p-0 gap-6 md:gap-12 items-center justify-center transition-all duration-300 z-[60]`}>
                     {navItems.map((item) => (
                         <li key={item.name} className="group">
                             <Link

@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { teamMembers } from '../data/team';
+import SEO from '../components/SEO';
 
 const MemberProfile = () => {
     const { id } = useParams();
@@ -8,6 +9,7 @@ const MemberProfile = () => {
     if (!member) {
         return (
             <div className="min-h-screen flex items-center justify-center pt-20">
+                <SEO title="Member Not Found" />
                 <div className="text-center">
                     <h1 className="text-4xl font-bold mb-4">Member Not Found</h1>
                     <Link to="/" className="text-yellow-600 hover:underline">Return Home</Link>
@@ -18,14 +20,18 @@ const MemberProfile = () => {
 
     return (
         <div className="pt-40 pb-20 px-4 md:px-0 container mx-auto min-h-screen flex items-center justify-center">
+            <SEO
+                title={`${member.name} - ${member.role}`}
+                description={`Meet ${member.name}, our ${member.role} at Jengset Dev Group.`}
+            />
             <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden max-w-4xl w-full flex flex-col md:flex-row transition-colors duration-300">
                 {/* Image Side */}
-                <div className="w-full md:w-1/2 h-96 md:h-auto relative">
+                <div className="w-full md:w-1/2 h-72 md:h-auto relative">
                     <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:hidden"></div>
-                    <div className="absolute bottom-6 left-6 text-white md:hidden">
-                        <h1 className="text-3xl font-bold">{member.name}</h1>
-                        <p className="text-yellow-400 font-medium">{member.role}</p>
+                    <div className="absolute bottom-6 left-6 right-6 text-white md:hidden">
+                        <h1 className="text-2xl font-bold leading-tight">{member.name}</h1>
+                        <p className="text-yellow-400 font-medium mt-1">{member.role}</p>
                     </div>
                 </div>
 
