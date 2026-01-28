@@ -15,15 +15,15 @@ const TeamCard = ({ member }) => {
 
             <div className="flex gap-8 justify-center w-full">
                 <a href={member.github} target="_blank" rel="noreferrer" className="flex flex-col items-center gap-1 hover:-translate-y-1 transition-transform duration-300">
-                    <img src="/assets/icon-pack/icons8-github-50.png" alt="GitHub" className="w-6 h-6 dark:invert" />
+                    <img src={`${import.meta.env.BASE_URL}assets/icon-pack/icons8-github-50.png`} alt="GitHub" className="w-6 h-6 dark:invert" />
                     <span className="text-[10px] text-gray-500 dark:text-gray-400 font-medium">GitHub</span>
                 </a>
                 <a href={member.instagram} target="_blank" rel="noreferrer" className="flex flex-col items-center gap-1 hover:-translate-y-1 transition-transform duration-300">
-                    <img src="/assets/icon-pack/icons8-insta-50.png" alt="Instagram" className="w-6 h-6" />
+                    <img src={`${import.meta.env.BASE_URL}assets/icon-pack/icons8-insta-50.png`} alt="Instagram" className="w-6 h-6" />
                     <span className="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Instagram</span>
                 </a>
                 <Link to={`/member/${member.id}`} className="flex flex-col items-center gap-1 hover:-translate-y-1 transition-transform duration-300">
-                    <img src="/assets/icon-pack/icons8-man-50.png" alt="Personal" className="w-6 h-6 dark:invert" />
+                    <img src={`${import.meta.env.BASE_URL}assets/icon-pack/icons8-man-50.png`} alt="Personal" className="w-6 h-6 dark:invert" />
                     <span className="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Personal</span>
                 </Link>
             </div>
