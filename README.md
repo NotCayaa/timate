@@ -2,7 +2,7 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://notcayaa.github.io/timate/) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Welcome to **Timate**, the official interactive portfolio website for [Jengset Dev Group](https://github.com/Jengset-Dev). This project showcases our team, vision, mission, and the innovative projects we've built, wrapped in a modern, high-performance web application.
+Welcome to **Timate**, the official interactive portfolio website for [Jengset Dev Group]. This project showcases our team, vision, mission, and the innovative projects we've built, wrapped in a modern, high-performance web application.
 
 🚀 **Major Update v2.0**
 Refactored from a static site to a fully interactive Single Page Application (SPA) with AI integration, dynamic filtering, and premium UI animations.
@@ -101,4 +101,4 @@ timate/
 
 ---
 
-© 2024 **Jengset Dev Group**. Built with ❤️ and code.
+**2024 Jengset Dev Group. All rights reserved.**

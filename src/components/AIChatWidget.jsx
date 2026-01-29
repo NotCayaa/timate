@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Groq from 'groq-sdk';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { systemPrompt } from '../data/systemPrompt';
@@ -33,29 +32,32 @@ const AIChatWidget = () => {
         setIsLoading(true);
 
         try {
-            const groq = new Groq({
-                apiKey: import.meta.env.VITE_GROQ_API_KEY,
-                dangerouslyAllowBrowser: true // Client-side usage disclaimer
+            const apiMessages = [
+                { role: 'system', content: systemPrompt },
+                ...messages,
+                userMessage
+            ];
+
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ messages: apiMessages }),
             });
 
-            const completion = await groq.chat.completions.create({
-                messages: [
-                    { role: 'system', content: systemPrompt },
-                    ...messages,
-                    userMessage
-                ],
-                model: 'llama-3.3-70b-versatile', // Powerful OSS model
-                temperature: 0.8,
-                max_tokens: 800,
-            });
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
 
-            const aiResponse = completion.choices[0]?.message?.content || "Sorry, I'm having trouble thinking right now.";
+            const data = await response.json();
+            const aiResponse = data.content;
 
             setMessages(prev => [...prev, { role: 'assistant', content: aiResponse }]);
 
         } catch (error) {
             console.error("AI Error:", error);
-            setMessages(prev => [...prev, { role: 'assistant', content: "Oops! Something went wrong. Please check your connection or API key." }]);
+            setMessages(prev => [...prev, { role: 'assistant', content: "Oops! Something went wrong. Please check your connection." }]);
         } finally {
             setIsLoading(false);
         }
