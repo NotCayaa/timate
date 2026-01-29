@@ -2,7 +2,7 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://notcayaa.github.io/timate/) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Welcome to **Timate**, the official interactive portfolio website for [Jengset Dev Group]. This project showcases our team, vision, mission, and the innovative projects we've built, wrapped in a modern, high-performance web application.
+Welcome to **Timate**, the official interactive portfolio website for Jengset Dev Group. This project showcases our team, vision, mission, and the innovative projects we've built, wrapped in a modern, high-performance web application.
 
 🚀 **Major Update v2.0**
 Refactored from a static site to a fully interactive Single Page Application (SPA) with AI integration, dynamic filtering, and premium UI animations.
@@ -51,15 +51,17 @@ Built with the best modern web tools:
 
 2.  **Install Dependencies**
     ```bash
-    npm install
+    npm install --legacy-peer-deps
     ```
 
 3.  **Setup Environment Variables**
     Create a `.env` file in the root directory:
     ```env
-    VITE_GROQ_API_KEY=your_groq_api_key_here
+    VITE_GROQ_API_KEY=your_groq_api_key_here (for development)
+    GROQ_API_KEY=your_groq_api_key_here (for production)
     VITE_EMAILJS_SERVICE_ID=your_service_id
     VITE_EMAILJS_TEMPLATE_ID=your_template_id
+    VITE_EMAILJS_AUTOREPLY_TEMPLATE_ID=your_autoreply_template_id
     VITE_EMAILJS_PUBLIC_KEY=your_public_key
     ```
 
